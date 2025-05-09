@@ -1,0 +1,23 @@
+"0","t <- print(summary(result)) %>%"
+"0","  kable(format = ""html"", caption = ""Model Output"") %>%"
+"0","  kable_styling(bootstrap_options = c(""striped"", ""hover"", ""condensed""), full_width = F)"
+"1","2 strategies run for 10 cycles.
+
+"
+"1","Initial state counts:
+
+"
+"1","totchr_0 = 1000L
+totchr_1 = 0L
+totchr_2 = 0L
+totchr_3 = 0L
+totchr_geq4 = 0L
+Dead = 0L"
+"1","
+
+Counting method: 'end'.
+
+"
+"1","Values:
+
+"

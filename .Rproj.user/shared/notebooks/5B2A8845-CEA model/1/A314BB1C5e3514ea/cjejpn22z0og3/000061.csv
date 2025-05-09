@@ -1,0 +1,8 @@
+"0","# Save deterministic results"
+"0","#write_csv(summary(result), ""markov_results.csv"")"
+"0",""
+"0","# Plot deterministic cost-effectiveness plane"
+"0","library(ggplot2)"
+"0","ggplot(data = result$run_model, aes(x = effect, y = cost, color = .strategy_names)) +"
+"0","  geom_point() +"
+"0","  theme_minimal()"

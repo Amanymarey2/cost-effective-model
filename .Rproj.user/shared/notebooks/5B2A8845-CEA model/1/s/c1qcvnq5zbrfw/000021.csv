@@ -1,0 +1,64 @@
+"0","# Define strategies, explicitly naming states to match state_names (without parameters)"
+"0","print(""Defining strategy (standard):"")"
+"1","[1]"
+"1"," ""Defining strategy (standard):"""
+"1","
+"
+"0","model_standard <- define_strategy("
+"0","  transition = trans_standard,"
+"0","  totchr_0 = state_totchr_0,"
+"0","  totchr_1 = state_totchr_1,"
+"0","  totchr_2 = state_totchr_2,"
+"0","  totchr_3 = state_totchr_3,"
+"0","  totchr_geq4 = state_totchr_geq4,"
+"0","  Dead = state_dead"
+"0",")"
+"0",""
+"0","print(""Defining strategy (intervention):"")"
+"1","[1]"
+"1"," ""Defining strategy (intervention):"""
+"1","
+"
+"0","model_intervention <- define_strategy("
+"0","  transition = trans_intervention,"
+"0","  totchr_0 = state_totchr_0,"
+"0","  totchr_1 = state_totchr_1,"
+"0","  totchr_2 = state_totchr_2,"
+"0","  totchr_3 = state_totchr_3,"
+"0","  totchr_geq4 = state_totchr_geq4,"
+"0","  Dead = state_dead"
+"0",")"
+"0",""
+"0","# Run deterministic model, passing parameters here and removing discount"
+"0","result <- run_model("
+"0","  standard = model_standard,"
+"0","  intervention = model_intervention,"
+"0","  parameters = params,"
+"0","  cycles = 10, # 10 years, suitable for ages 60–90"
+"0","  method = ""end"","
+"0","  cost = cost,    # Explicitly specify cost variable"
+"0","  effect = effect  # Explicitly specify effect variable"
+"0",")"
+"0",""
+"0","# Debug: Inspect model outputs"
+"0","print(summary(result))"
+"1","2 strategies run for 10 cycles.
+
+"
+"1","Initial state counts:
+
+"
+"1","totchr_0 = 1000L
+totchr_1 = 0L
+totchr_2 = 0L
+totchr_3 = 0L
+totchr_geq4 = 0L
+Dead = 0L"
+"1","
+
+Counting method: 'end'.
+
+"
+"1","Values:
+
+"
