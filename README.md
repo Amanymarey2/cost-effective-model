@@ -16,5 +16,5 @@ An interactive, rendered version of this project, including the R code, outputs,
   ## How to Replicate
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/AmanyMarey2/Chronic-Disease-CEA-Markov-Model.git
-   cd Chronic-Disease-CEA-Markov-Model
+   git clone https://github.com/AmanyMarey2/cost-effective-model.git
+   cd cost-effective-model
